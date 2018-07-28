@@ -7,6 +7,7 @@ Installation
 -----
 
 .. code-block:: bash
+
     pip install grepmx
 
 
@@ -16,6 +17,7 @@ Usage
 Lets say you have a CSV file with user information, e.g.
 
 .. code-block::
+
     firstname,surname,email,city
     Michelle,Shelly,michelleshelly@yahoo.com,Kearny
     Daniel,Boone,danielboone@gmail.com,New York
@@ -26,6 +28,7 @@ Lets say you have a CSV file with user information, e.g.
 and you want to find all lines with a yahoo MX, the command would be:
 
 .. code-block:: bash
+
     grepmx -m .yahoodns.? -m .yahoo.co.jp users.csv
 
 the output is then all but the gmail.
